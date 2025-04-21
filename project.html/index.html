@@ -3,67 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <meta name="description" content="Discover the diversity, beauty and rich heritage of India">
+    <title>Incredible India</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #1a2e32;
+            --primary-light: #1aa7a5;
+            --accent: #ffc107;
+            --bg-light: #f5f7f0;
+            --text-dark: #2c3e50;
+        }
+        
+        body { 
+            background-color: var(--bg-light);
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+        
+        .hero-header {
+            background: linear-gradient(135deg, #1a4a47 0%, var(--primary-light) 100%);
+            border-radius: 15px;
+        }
+        
+        .custom-navbar { 
+            background-color: var(--primary-dark);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .custom-footer { 
+            background-color: var(--primary-dark);
+            color: white;
+        }
+        
+        .hover-effect {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-effect:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .highlight-card {
+            background: white;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            height: 100%;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .img-container:hover img {
+            transform: scale(1.05);
+        }
+        
+        .content-img {
+            height: 280px;
+            object-position: center;
+        }
+        
+        .square-img {
+            height: 200px;
+        }
+        
+        mark.bg-accent {
+            background-color: var(--accent);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            color: var(--text-dark);
+        }
+        
+        .culture-item {
+            border-left: 3px solid var(--primary-light);
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-dark);
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-light);
+        }
+        
+        .btn-explore {
+            background-color: var(--accent);
+            color: var(--text-dark);
+            font-weight: 600;
+            border: none;
+            padding: 0.75rem 1.5rem;
+        }
+        
+        .btn-explore:hover {
+            background-color: #e0a800;
+            transform: translateY(-2px);
+        }
+        
+        .nav-link {
+            font-weight: 500;
+        }
+        
+        .text-muted {
+            color: #6c757d !important;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Incredible india</h1>
-    <h5>Discover the diversity,beauty and rich heritage of India! </h5>
-    <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="culture.html">Culture</a></li>
-        <li><a href="landmark.html">Landmarks</a></li>
-        <li><a href="cuisine.html">Cuisine</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-    </nav>
-    <h1>About india</h1>
-    <p>India is a land of incredible diversity. From the snow-capped peaks of the Himalayas to the serene backwaters of Kerala, every corner of India tells a unique story. India is the second-most populous country in the world and boasts a history spanning thousands of years. Its rich traditions have left an indelible mark on the world.</p>
-    <img src="./E13A2B0D-E270-4C9A-A0B5-2876E0D5F1A8_4_5005_c.jpeg" alt="indian">
-    <p><Blockquote>India: A Land of culture and geographical diversity</Blockquote></p>
-    <p><Blockquote>"Unity in diversity not just slogan in india but a way of life."</Blockquote></p>
-    <p>Highlights of india include:</p>
-    <ul>
-        <li><strong>Architecture:</strong> Majestic mountain like Taj Mahal and Red Fort</li>
-        <li><strong>Cuisine:</strong> Diverse flavour from Spicy Curies to Sweet dishes</li>
-        <li><strong>Culture:</strong> Vibrant Festivals,classic dances,and colourful altire</li>
-    </ul>
-    <h1>Famous Landmarks</h1>
-    <p>India is home to 29 UNESCO World Heritage Sites,making it a paradise for History and Architecture Enthusiasts  </p>
-    <div><label style="margin-left: 25px;"><img src="./11CAD309-0C36-4EEA-92AF-268F6A4A7AAB_4_5005_c.jpeg" alt="Taj Mahel"></label>
-    <ol>
-        <li>The Taj Mahel,Symobl of eternal Love</li>
-    </ol></div>
-    <div><label style="margin-left: 25px;"><img src="./2AE6BCBE-9ED9-4055-90AD-713AD90E6BDE_4_5005_c.jpeg" alt="Kutub minar"></label>
-    <ol start="2">
-        <li>The Qutub Minar,an archietectural Marvel in Delhi</li>
-    </ol>
-    </div>
-    <p>Don't miss exploring the intricate Carvings,towering minarets,and breathtaking</p>
-    <h1>Indian Culture</h1>
-    <p>Indian Cultural heritage is blend of Various traditions,languages,and religions.Each region has its unqie identity and traditions that are celebrated through festival and daily life here are some heighlights:</p>
-    <ul>
-        <li><strong>Classical Dances:</strong>Bharatnatyam,kathak,and odissi.</li>
-        <li><strong>Music:</strong>traditional Instrumant like the Sitar,tabla nd veena. </li>
-        <li><strong>Festivals:</strong> Diwali,holi,Eid, and christmas bring people together in celebrations.</li>
-        <br>
-        <img src="8531DF06-7E1B-4C37-91C1-9901CF3CF382_4_5005_c.jpeg" alt="dance">
-        <p>A glimps of Indian Classical Dance</p>
-    </ul>
-    <h1>Delicious Indian Cuisine</h1>
-    <p>Indian food as diverse as its culture.From The fiery curries of South to the hearty bread of the north,there's Something for everyone.popular dishes include:</p>
-    <ul>
-        <li><strong>North Indian: </strong>Butter chicken naan and paneer tika.</li>
-        <li><strong>South Indian:</strong> Dosa,idli, and sambhar.</li>
-        <li><strong>Street Food: </strong>Pani puri Chat and Vada pav</li>
-        <img src="FB79C98F-B624-4B8B-994B-49DD2318C9AC_4_5005_c.jpeg" alt="biryani">
-    <p>Delicious hydrabadi biryani</p>
-    <img src="B2B4D6F4-989C-46C5-A3A8-B976F4EA7A98_4_5005_c.jpeg" alt=" street food">
-    <p>Colourful and favourable indian street food</p>
-    </ul>
-    <footer><a href="new"><u>Back To Home</u></a>
-        <p>Contact us at=<a href="#">info@incredibleindia.com</a></p> 
-        <footer><p>&copy;2025 Incredible India Project.</p></footer>
+    <header class="hero-header text-white text-center p-4 p-md-5 my-3 mx-md-3">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Welcome to <mark class="bg-accent">Incredible India</mark></h1>
+            <p class="lead mb-4 fs-4">Discover the diversity, beauty and rich heritage of India!</p>
+            <a href="#about" class="btn btn-explore btn-lg px-4 py-2 fw-bold hover-effect">Explore More</a>
+        </div>
+    </header>
 
-    </body>
-    </html>
+    <nav class="navbar navbar-expand-lg custom-navbar py-3 mb-4 mx-md-3">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold fs-4" href="#">
+                <span class="d-inline-block align-middle">Indian Heritage</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2 active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="landmark.html">Landmarks</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="cuisine.html">Cuisine</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5" id="about">
+        <section class="mb-5">
+            <div class="highlight-card p-4 p-md-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2 class="section-title">About India</h2>
+                        <p class="mb-4 fs-5">India is a land of incredible diversity. From the snow-capped peaks of the Himalayas to the serene backwaters of Kerala, every corner tells a unique story.</p>
+                        <p>With over 1.4 billion people, India is the world's largest democracy and one of the oldest civilizations with a rich cultural heritage spanning more than 4,500 years.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="img-container hover-effect content-img">
+                            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" 
+                                 class="img-fluid"
+                                 alt="Panoramic view of Indian landscape showing mountains and rivers"
+                                 loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="highlight-card p-4 h-100">
+                    <h2 class="section-title">Famous Landmarks</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="img-container hover-effect square-img">
+                                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" 
+                                     class="img-fluid"
+                                     alt="Taj Mahal at sunrise"
+                                     loading="lazy">
+                            </div>
+                            <h3 class="h5 mt-3">Taj Mahal</h3>
+                            <p class="text-muted">The iconic white marble mausoleum in Agra, built by Mughal emperor Shah Jahan in memory of his wife Mumtaz Mahal.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-container hover-effect square-img">
+                                <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                     class="img-fluid"
+                                     alt="Qutub Minar historical monument"
+                                     loading="lazy">
+                            </div>
+                            <h3 class="h5 mt-3">Qutub Minar</h3>
+                            <p class="text-muted">The tallest brick minaret in the world at 73 meters, built in 1193, showcasing exquisite Indo-Islamic architecture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="highlight-card p-4 h-100">
+                    <h2 class="section-title">Cultural Heritage</h2>
+                    <div class="img-container hover-effect content-img mb-4">
+                        <img src=https://images.unsplash.com/photo-1479813183133-f2e9b38ed6c4?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xhc3NpY2FsJTIwZGFuY2V8ZW58MHx8MHx8fDA%3D
+                             class="img-fluid"
+                             alt="Indian classical dancer performing"
+                             loading="lazy">
+                    </div>
+                    <div class="culture-item">
+                        <h3 class="h5">Classical Dance Forms</h3>
+                        <p class="text-muted">India has eight classical dance forms including Bharatanatyam, Kathak, and Odissi, each with unique styles and expressions.</p>
+                    </div>
+                    <div class="culture-item">
+                        <h3 class="h5">Musical Heritage</h3>
+                        <p class="text-muted">From classical Hindustani and Carnatic music to diverse folk traditions, India's musical heritage is vast and varied.</p>
+                    </div>
+                    <div class="culture-item">
+                        <h3 class="h5">Festivals</h3>
+                        <p class="text-muted">Celebrations like Diwali, Holi, Eid, and Christmas showcase India's religious diversity and cultural richness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="custom-footer text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h4 mb-3">Indian Heritage</h3>
+                    <p>Celebrating India's rich cultural diversity and heritage through education and awareness.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h4 mb-3">Quick Links</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a></li>
+                        <li class="nav-item mb-2"><a href="culture.html" class="nav-link p-0 text-white-50">Culture</a></li>
+                        <li class="nav-item mb-2"><a href="landmark.html" class="nav-link p-0 text-white-50">Landmarks</a></li>
+                        <li class="nav-item mb-2"><a href="cuisine.html" class="nav-link p-0 text-white-50">Cuisine</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="h4 mb-3">Contact</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">info@indianheritage.com</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">+91 98765 43210</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">New Delhi, India</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Indian Heritage Site. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

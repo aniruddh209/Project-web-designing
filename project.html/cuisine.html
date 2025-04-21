@@ -3,55 +3,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Indian Cuisine - A Flavorful Journey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #1a2e32;
+            --primary-light: #1aa7a5;
+            --accent: #ffc107;
+            --bg-light: #f5f7f0;
+            --text-dark: #2c3e50;
+        }
+        
+        body { 
+            background-color: var(--bg-light);
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+        
+        .hero-header {
+            background: linear-gradient(135deg, #1a4a47 0%, var(--primary-light) 100%);
+            border-radius: 15px;
+        }
+        
+        .custom-navbar { 
+            background-color: var(--primary-dark);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .custom-footer { 
+            background-color: var(--primary-dark);
+            color: white;
+        }
+        
+        .hover-effect {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-effect:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .highlight-card {
+            background: white;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .img-container:hover img {
+            transform: scale(1.05);
+        }
+        
+        .content-img {
+            height: 300px;
+            object-position: center;
+        }
+        
+        .square-img {
+            height: 250px;
+        }
+        
+        mark.bg-accent {
+            background-color: var(--accent);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            color: var(--text-dark);
+        }
+        
+        .cuisine-card {
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-dark);
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-light);
+        }
+        
+        .spice-badge {
+            background-color: var(--primary-light);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 0.3rem;
+        }
+        
+        .dish-item {
+            border-left: 3px solid var(--accent);
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="culture.html">Culture</a></li>
-            <li><a href="landmark.html">Landmarks</a></li>
-            <li><a href="cuisine.html">Cuisine</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        </nav>
-<h1>Popular Indian dishes</h1>
-<p>Explore the flavorsof indian through its diiverse and rich culinary traditions!</p>
-<audio controls>
-    <source src="./titanium.mp3">
-</audio>
-<h2 style="margin-left: 32px;">North Indian Cuisine</h2>
-<p>North India is known for its rich, aromatic, and flavorful dishes often cooked with ghee and spices:</p>
-<ul>
-    <li><strong>Biryani: </strong>A fragrant rice dish made with aromatic spices and meat or vegetables</li>
-    <li><strong>Butter Chicken:</strong>A creamy, tomato-based curry that's a favorite worldwide.</li>
-    <li><strong>Paneer Tikka: </strong>Marinated paneer cubes grilled to perfection.</li>
-    <br>
-    <img src="FB79C98F-B624-4B8B-994B-49DD2318C9AC_4_5005_c.jpeg" alt="biryani">
-    <p>Aromatic and flavorful Biryani</p>
-    <h2>South indian Cuisine</h2>
-    <p>South India offers a wide array of dishes with a perfect blend of spices and tangy flavors:</p>    
-</ul>
-<ul>
-    <li><strong>Masala Dosa: </strong>A crispy rice crepe stuffed with spicy potato filling.</li>
-    <li><strong>Idli and Sambar:</strong>Soft rice cakes served with a tangy lentil-based vegetable stew.</li>
-    <li><strong>Chettinad Chicken:</strong>A fiery, flavorful chicken dish from Tamil Nadu.</li>
-    <br>
-    <img src="D6CB7218-FE71-4FFE-8312-6178D9464497_4_5005_c.jpeg" alt="dosa">
-    <p>South indian Favourite:Masala Dosa</p>
-</ul>
-<h2 style="margin-left: 32px;">Sweet delight</h2>
-<p>No Indian meal is complete without indulging in some mouth-watering desserts:</p>
-<ul>
-    <li><strong>Gulab Jamun: </strong>Fried milk solids soaked in sugar syrup.</li>
-    <li><strong>Rasgulla: </strong>Soft and spongy cheese balls in light sugar syrup.</li>
-    <li><strong>Payasam:</strong>A South Indian dessert made of milk, rice, and jaggery.</li>
-    <br>
-    <img src="2D9D4DB0-3845-4D79-96FF-BFE7E4260D4E_4_5005_c.jpeg" alt="julab jamun">
-    <p>Irresistible Gulab Jamun</p>
-</ul>
-<footer><a href="new"><u>Back To Home</u></a>
-    <p>Contact us at=<a href="#">info@incredibleindia.com</a></p> 
-    <footer><p>&copy;2025 Incredible India Project.</p></footer>
+    <header class="hero-header text-white text-center p-4 p-md-5 my-3 mx-md-3">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Indian<mark class="bg-accent">Cuisine</mark></h1>
+            <p class="lead mb-4 fs-4">A culinary journey through India's diverse flavors and traditions</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg custom-navbar py-3 mb-4 mx-md-3">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold fs-4" href="index.html">
+                <span class="d-inline-block align-middle">Cuisine</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="landmark.html">Landmarks</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2 active" href="cuisine.html">Cuisine</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section class="mb-5">
+            <div class="highlight-card p-4 p-md-5">
+                <h2 class="section-title">Popular Indian dishes</h2>
+                <p class="lead mb-4">India's culinary diversity reflects its cultural variety, with each region offering unique flavors.</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="cuisine-card hover-effect">
+                            <div class="img-container square-img">
+                                <img src=https://media.istockphoto.com/id/873539518/photo/deep-fried-bread-spicy-chickpeas-curry-and-salad.jpg?s=2048x2048&w=is&k=20&c=oXjCteoVh8WU4dQ8ucWRWcO06FG5Ndqut9VkM_FsNrQ=
+                                     class="img-fluid"
+                                     alt="North Indian thali with various dishes"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-3">
+                                <h3 class="h5">North Indian Cuisine</h3>
+                                <div class="dish-item">
+                                    <h4 class="h6">Butter Chicken</h4>
+                                    <p class="small">Creamy tomato-based curry with tandoori chicken, originating from Delhi.</p>
+                                </div>
+                                <div class="dish-item">
+                                    <h4 class="h6">Rogan Josh</h4>
+                                    <p class="small">Aromatic lamb curry from Kashmir with flavors of fennel and ginger.</p>
+                                </div>
+                                <div class="dish-item">
+                                    <h4 class="h6">Chole Bhature</h4>
+                                    <p class="small">Spicy chickpeas served with fried bread, a Punjabi specialty.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="cuisine-card hover-effect">
+                            <div class="img-container square-img">
+                                <img src=https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c291dGglMjBpbmRpYW4lMjBmb29kfGVufDB8fDB8fHww
+                                     class="img-fluid"
+                                     alt="South Indian meal with dosa and chutneys"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-3">
+                                <h3 class="h5">South Indian Cuisine</h3>
+                                <div class="dish-item">
+                                    <h4 class="h6">Masala Dosa</h4>
+                                    <p class="small">Crispy rice crepe stuffed with spiced potatoes, served with coconut chutney.</p>
+                                </div>
+                                <div class="dish-item">
+                                    <h4 class="h6">Hyderabadi Biryani</h4>
+                                    <p class="small">Fragrant rice dish with meat and spices, cooked in the dum style.</p>
+                                </div>
+                                <div class="dish-item">
+                                    <h4 class="h6">Appam with Stew</h4>
+                                    <p class="small">Lacy rice pancakes served with coconut milk-based vegetable stew from Kerala.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="cuisine-card hover-effect">
+                            <div class="img-container square-img">
+                                <img src=https://images.unsplash.com/photo-1725640533340-dc3025e7a621?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3RyZWV0JTIwZm9vZCUyMG1pc2FsJTIwcGF2fGVufDB8fDB8fHww
+                                     class="img-fluid"
+                                     alt="Indian street food variety"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-3">
+                                <h3 class="h5">Indian Street food</h3>
+                                <div class="dish-item">
+                                    <h4 class="h6">Misal Pav</h4>
+                                    <p class="small">Spicy sprouted bean curry served with bread rolls, a Maharashtrian favorite.</p>
+                                </div>
+                                <div class="dish-item">
+                                    <h4 class="h6">Pani puri</h4>
+                                    <p class="small">Very Famous in whole india </p>
+                                </div>
+                                <div class="dish-item">
+                                    <h4 class="h6">Dhokla</h4>
+                                    <p class="small">Steamed fermented chickpea flour cake, a Gujarati snack.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div class="highlight-card p-4 p-md-5">
+                <h2 class="section-title">Sweet Delight</h2>
+                <p class="lead mb-4">Indian desserts range from milk-based sweets to fried delicacies.</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="hover-effect text-center">
+                            <div class="img-container square-img">
+                                <img src=https://images.unsplash.com/photo-1680993032090-1ef7ea9b51e5?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z3VsYWIlMjBqYW11bnxlbnwwfHwwfHx8MA%3D%3D
+                                     class="img-fluid"
+                                     alt="Gulab jamun dessert"
+                                     loading="lazy">
+                            </div>
+                            <h3 class="h5 mt-3">Gulab Jamun</h3>
+                            <p class="text-muted">Fried milk-solid balls soaked in rose-flavored sugar syrup, popular nationwide.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="hover-effect text-center">
+                            <div class="img-container square-img">
+                                <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                     class="img-fluid"
+                                     alt="Rasgulla sweets"
+                                     loading="lazy">
+                            </div>
+                            <h3 class="h5 mt-3">Rasgulla</h3>
+                            <p class="text-muted">Spongy cottage cheese balls in light syrup, originating from West Bengal.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="hover-effect text-center">
+                            <div class="img-container square-img">
+                                <img src=https://images.unsplash.com/photo-1728364283053-b1e2abe71611?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8amFsZWJpfGVufDB8fDB8fHww
+                                     class="img-fluid"
+                                     alt="Jalebi dessert"
+                                     loading="lazy">
+                            </div>
+                            <h3 class="h5 mt-3">Jalebi</h3>
+                            <p class="text-muted">Crispy spiral-shaped sweets soaked in syrup, often served warm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="custom-footer text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h4 mb-3">Indian Heritage</h3>
+                    <p>Celebrating India's rich culinary traditions and diverse flavors.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h4 mb-3">Quick Links</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a></li>
+                        <li class="nav-item mb-2"><a href="culture.html" class="nav-link p-0 text-white-50">Culture</a></li>
+                        <li class="nav-item mb-2"><a href="landmark.html" class="nav-link p-0 text-white-50">Landmarks</a></li>
+                        <li class="nav-item mb-2"><a href="cuisine.html" class="nav-link p-0 text-white-50">Cuisine</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="h4 mb-3">Contact</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">info@indianheritage.com</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">+91 98765 43210</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">New Delhi, India</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Indian Heritage Site. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

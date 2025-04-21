@@ -1,72 +1,394 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cultural</title>
+    <title>Indian Culture - Rich Heritage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #1a2e32;
+            --primary-light: #1aa7a5;
+            --accent: #ffc107;
+            --bg-light: #f5f7f0;
+            --text-dark: #2c3e50;
+        }
+        
+        body { 
+            background-color: var(--bg-light);
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+        
+        .hero-header {
+            background: linear-gradient(135deg, #1a4a47 0%, var(--primary-light) 100%);
+            border-radius: 15px;
+        }
+        
+        .custom-navbar { 
+            background-color: var(--primary-dark);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .custom-footer { 
+            background-color: var(--primary-dark);
+            color: white;
+        }
+        
+        .hover-effect {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-effect:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .highlight-card {
+            background: white;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .img-container:hover img {
+            transform: scale(1.05);
+        }
+        
+        .content-img {
+            height: 300px;
+            object-position: center;
+        }
+        
+        .square-img {
+            height: 200px;
+        }
+        
+        mark.bg-accent {
+            background-color: var(--accent);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            color: var(--text-dark);
+        }
+        
+        .culture-item {
+            border-left: 3px solid var(--primary-light);
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-dark);
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-light);
+        }
+        
+        .btn-explore {
+            background-color: var(--accent);
+            color: var(--text-dark);
+            font-weight: 600;
+            border: none;
+            padding: 0.75rem 1.5rem;
+        }
+        
+        .btn-explore:hover {
+            background-color: #e0a800;
+            transform: translateY(-2px);
+        }
+        
+        .nav-link {
+            font-weight: 500;
+        }
+        
+        .festival-card {
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .language-badge {
+            background-color: var(--primary-light);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 0.3rem;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="culture.html">Culture</a></li>
-            <li><a href="landmark.html">Landmarks</a></li>
-            <li><a href="cuisine.html">Cuisine</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        </nav>
-<h1>Indian Culture</h1>
-<p>Discover the rich and diverse culture of India, a land of unity in diversity.</p>
-<h2>Festivals</h2>
-<p>India celebrates a variety of festivals that reflect its rich cultural heritage and religious diversity:</p>
-<ul>
-    <li><strong>Diwali: </strong>Festival of Lights, symbolizing the victory of light over darkness.</li>
-    <li><Strong>Holi: </Strong>Festival of Colors, celebrating love and the arrival of spring.</li>
-    <li><strong>Eid: </strong>Festival of Harmony, marked by prayers, feasts, and charity.</li>
-    <li><strong>Christmas:</strong>Festival of Joy, celebrating the birth of Jesus Christ.</li>
-    <br>
-    <img src="94E3A277-8CC3-4A44-8DA7-D18F11391393_4_5005_c.jpeg" alt="culture">
-    <p>Diwali The Festival of Light</p>
-    </ul>
-    <h1>languages</h1>
-    <p>India is a linguistic treasure trove with 22 officially recognized languages and thousands of regional dialects:</p>
-<table border="1" cellpadding="15" style="margin-left: 30px;">
-    <caption><strong>Popular Languages in India</strong></caption>
-    <tr>
-        <th>Language</th>
-        <th>Region</th>
-    </tr>
-    <tr>
-        <td>Hindi</td>
-        <td>North india</td>
-    </tr>
-    <tr>
-        <td>Bengali</td>
-        <td>West Bengal</td>
-    </tr>
-    <tr>
-        <td>Tamil</td>
-        <td>Tamil Nadu</td>
-    </tr>
-    <tr>
-        <td>Telugu</td>
-        <td>Aandhra Pradesh</td>
-    </tr>
-</table>
-</footer>
-<h1>Traditional Attire</h1>
-<p>Indian traditional clothing varies by region,showcasing its cultural diversity</p>
-<ul>
-    <li><Strong>Saree:</Strong>Elegent drape worn by women across india</li>
-    <li><strong>Kurta-pajama :</strong>Comfortable attire for men,popular in the north.</li>
-    <li><strong>Lahenga:</strong>A festive outfit for women,especially in weddings.</li>
-    <li><strong>Dhoti :</strong>Traditional mens wear in southern and estern india</li>
-    <img src="image.png" alt="saree">
-    <p>Traditional saree-Grace and Elegance</p>
-</ul>
-<footer><a href="new"><u>Back To Home</u></a>
-    <p>Contact us at=<a href="#">info@incredibleindia.com</a></p> 
-    <footer><p>&copy;2025 Incredible India Project.</p></footer>
+    <header class="hero-header text-white text-center p-4 p-md-5 my-3 mx-md-3">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Indian <mark class="bg-accent">Culture</mark></h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg custom-navbar py-3 mb-4 mx-md-3">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold fs-4" href="index.html">
+                <span class="d-inline-block align-middle">Indian Culture</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2 active" href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="landmark.html">Landmarks</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="cuisine.html">Cuisine</a></li>
+                    <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section class="mb-5">
+            <div class="highlight-card p-4 p-md-5">
+                <h2 class="section-title">Indian Festivals</h2>
+                <p class="lead mb-4">India's festivals are a spectacular display of its cultural diversity and religious harmony.</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="festival-card hover-effect">
+                            <div class="img-container square-img">
+                                <img src=https://images.unsplash.com/photo-1666638787374-19795b11e87f?q=80&w=2536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                                     class="img-fluid"
+                                     alt="Diwali festival of lights"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-3">
+                                <h3 class="h5">Diwali</h3>
+                                <p class="text-muted">The festival of lights symbolizing the victory of light over darkness.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="festival-card hover-effect">
+                            <div class="img-container square-img">
+                                <img src=https://plus.unsplash.com/premium_photo-1682089818097-20263df238cf?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                                     class="img-fluid"
+                                     alt="Holi festival of colors"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-3">
+                                <h3 class="h5">Holi</h3>
+                                <p class="text-muted">The colorful festival celebrating love and the arrival of spring.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="festival-card hover-effect">
+                            <div class="img-container square-img">
+                                <img src=https://images.unsplash.com/photo-1581006249664-f6d8b09d6135?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                                     class="img-fluid"
+                                     alt="Eid celebrations"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-3">
+                                <h3 class="h5">Eid</h3>
+                                <p class="text-muted">Marked by prayers, feasts and charity, celebrating harmony.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="festival-card hover-effect">
+                            <div class="img-container square-img">
+                                <img src=https://plus.unsplash.com/premium_photo-1701454736122-14b846cfb3c3?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2hyaXN0bWFzfGVufDB8fDB8fHww
+                                     class="img-fluid"
+                                     alt="Christmas celebrations in India"
+                                     loading="lazy">
+                            </div>
+                            <div class="p-3">
+                                <h3 class="h5">Christmas</h3>
+                                <p class="text-muted">Celebrating the birth of Jesus Christ with joy and festivities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div class="highlight-card p-4 p-md-5">
+                <h2 class="section-title">Different Language's</h2>
+                <p class="lead mb-4">India is home to 22 officially recognized languages and thousands of dialects.</p>
+                
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="img-container hover-effect content-img">
+                            <img src=https://images.unsplash.com/photo-1642027351109-3c30f2074e48?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGxhbmd1YWdlfGVufDB8fDB8fHww
+                                 class="img-fluid"
+                                 alt="Indian language scripts"
+                                 loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-3">
+                            <h3 class="h4 mb-3">Major Language Groups</h3>
+                            <div class="mb-4">
+                                <span class="language-badge">Hindi</span>
+                                <span class="language-badge">Bengali</span>
+                                <span class="language-badge">Tamil</span>
+                                <span class="language-badge">Telugu</span>
+                                <span class="language-badge">Marathi</span>
+                                <span class="language-badge">Gujarati</span>
+                                <span class="language-badge">Punjabi</span>
+                                <span class="language-badge">Malayalam</span>
+                            </div>
+                            
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Language</th>
+                                            <th>Region</th>
+                                            <th>Speakers</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>Hindi</td><td>North India</td><td>528 million</td></tr>
+                                        <tr><td>Bengali</td><td>West Bengal</td><td>97 million</td></tr>
+                                        <tr><td>Tamil</td><td>Tamil Nadu</td><td>75 million</td></tr>
+                                        <tr><td>Telugu</td><td>Andhra Pradesh</td><td>82 million</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5">
+            <div class="highlight-card p-4 p-md-5">
+                <h2 class="section-title">Traditional Attire</h2>
+                <p class="lead mb-4">India's clothing reflects its cultural diversity with vibrant colors and unique styles.</p>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="hover-effect text-center">
+                            <div class="img-container square-img">
+                                <img src=https://plus.unsplash.com/premium_photo-1724762183986-39f29bbb160e?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHNhcmVlfGVufDB8fDB8fHww 
+                                     class="img-fluid"
+                                     alt="Traditional Indian saree"
+                                     loading="lazy">
+                            </div>
+                            <h3 class="h5 mt-3">Saree</h3>
+                            <p class="text-muted">Elegant drape worn by women across India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="hover-effect text-center">
+                            <div class="img-container square-img">
+                                <img src=https://images.unsplash.com/photo-1721400741783-c2ee1e4d7b97?q=80&w=1940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                                     alt="Kurta pajama"
+                                     loading="lazy">
+                            </div>
+                            <h3 class="h5 mt-3">Kurta-Pajama</h3>
+                            <p class="text-muted">Comfortable attire for men, popular in north</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="hover-effect text-center">
+                            <div class="img-container square-img">
+                                <img src=https://images.unsplash.com/photo-1602210666042-4d76a62d6fcb?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGxlaGVuZ2F8ZW58MHx8MHx8fDA%3D
+                                     class="img-fluid"
+                                     alt="Lehenga choli"
+                                     loading="lazy">
+                            </div>
+                            <h3 class="h5 mt-3">Lehenga</h3>
+                            <p class="text-muted">Festive outfit for women, especially in weddings</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="hover-effect text-center">
+                            <div class="img-container square-img">
+                                <img src=https://southdhotis.com/cdn/shop/files/IMG_0664-Photoroom.jpg?v=1725779439
+                                     class="img-fluid"
+                                     alt="Dhoti kurta"
+                                     loading="lazy">
+                            </div>
+                            <h3 class="h5 mt-3">Dhoti</h3>
+                            <p class="text-muted">Traditional menswear in southern and eastern India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="custom-footer text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h4 mb-3">Indian Heritage</h3>
+                    <p>Celebrating India's rich cultural diversity and heritage through education and awareness.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h4 mb-3">Quick Links</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a></li>
+                        <li class="nav-item mb-2"><a href="culture.html" class="nav-link p-0 text-white-50">Culture</a></li>
+                        <li class="nav-item mb-2"><a href="landmark.html" class="nav-link p-0 text-white-50">Landmarks</a></li>
+                        <li class="nav-item mb-2"><a href="cuisine.html" class="nav-link p-0 text-white-50">Cuisine</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="h4 mb-3">Contact</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">info@indianheritage.com</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">+91 98765 43210</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">New Delhi, India</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Indian Heritage Site. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

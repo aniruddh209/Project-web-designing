@@ -3,100 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: antiquewhite; }
+        .custom-navbar { background-color: #13282c; }
+        .custom-footer { background-color: #13282c; }
+        #page1 {
+            background-color: cadetblue;
+            border-radius: 7px;
+            animation: slideIn 1s ease-in;
+        }
+        .hover-effect:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+       
+        .form-section { 
+        background-color: #f9f9f9; border-radius: 8px; 
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: #08926a;
+            border-radius: 9px;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="culture.html">Culture</a></li>
-            <li><a href="landmark.html">Landmarks</a></li>
-            <li><a href="cuisine.html">Cuisine</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        </nav>
-<h1>Contact us</h1>
-<p>please fill out from below for any inquiries or to register as student.</p>
-<h2>Student Registration form</h2>
-<table>
-<form>
-    <tr>
-        <td><label for="fname">Enter your first name:</label>
-        <label for="fname"><input type="text" placeholder="Enter your first name"></label></td>
-    </tr>
-    <tr>
-    <td><label for="pass">Password :</label>
-        <input type="text"></td>
-        </tr>
-    <tr>
-        <td><label for="gender">Gender:</label>
-        <input type="radio" id="male" value="male" name="gender">male
-        <input type="radio" id="female" value="female" name="gender">Female</td>  
-    </tr>
-    <tr>
-        <td><label>Subdcribe to New Sletter:</label>
-        <input type="checkbox"></td>
-    </tr>
-    <tr>
-        <td><label>State:</label>
-            <select name="select your state" id="">
-                <option value="state" selected>Select your state</option>
-                <option value="state">Gujrat</option>
-                <option value="state">Delhi</option>
-                <option value="state">Maharastra</option>
-                <option value="state">Rajashthan</option>
-            </select>
-        </td>
-    </tr>
-
-    <tr>
-        <td><label for="File">
-            Upload your Resume:
-            <input type="file">
-        </label></td>
-    </tr>
-    <tr>
-        <td>
-            <label for="add">address:</label>
-            <textarea name="Add" id="add1"></textarea>
-        </td>
-    </tr>
-    <tr>
-        <td>
-
-            <label for="DOB">Date of Birth:
-                <input type="date" name="DOB" id="Date">
-            </label>
-        </td>
-
-    </tr>
-    <tr>
-
-        <td><label for="time">Preffered interview time:</label>
-        <input type="time">
-        </td>
-
-    </tr>
-    <tr>
-
-        <td><label for="mark">Marks:</label>
-        <input type="number"></td>
-
-    </tr>
-    <tr>
-
-        <td><button>Submit</button>
-        <button>Reset</button></td>
+    <header class="hero-header text-white text-center p-4 p-md-5 my-3 mx-md-3 bg-dark rounded-3">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Contact<mark class="bg-accent">Us</mark></h1>
+            <p class="lead mb-4 fs-4">Contact with us and give your feedback |</p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg custom-navbar py-3">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">Contact</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="landmarks.html">Landmarks</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="cuisine.html">Cuisine</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5" id="page1">
+        <h1 class="pt-4">Contact Us</h1>
+        <p class="mb-4">Please fill out the form below for any inquiries or to register as a student.</p>
         
-    </tr>
+        <h2>Student Registration Form</h2>
+        <div class="form-section p-4 my-4">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                    <label class="form-label ">First Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your first name" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Valid input please!
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" required>
+                    <div class="valid-feedback">
+                      Valid this was
+                      </div>
+                      <div class="invalid-feedback">
+                        Not match!
+                        </div>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Gender</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                        <label class="form-label" for="validationFormCheck2">Male</label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                        <label class="form-label" for="validationFormCheck3">Female</label>
+                        <div class="invalid-feedback">More example invalid feedback text</div>
+                      </div>                    
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="newsletter" checked>
+                        <label class="form-label" for="newsletter">Subscribe to Newsletter</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">State</label>
+                    <select class="form-select has-validation">
+                        <option selected>Select your state</option>
+                        <option>Gujarat</option>
+                        <option>Delhi</option>
+                        <option>Maharashtra</option>
+                        <option>Rajasthan</option>
+                    </select>
+                </div>
+                <div class="col-md-6 needs-validation" novalidate>
+                    <label class="form-label">Upload Resume</label>
+                    <input type="file" class="form-control" required>
+                    <div class="valid-feedback">
+                        done👍|
+                      </div>
+                      <div class="invalid-feedback">
+                        Not Uploaded!
+                      </div>
+                </div>
 
-</form>
-</table>
-<h2>More Informtion</h2>
-<p>Explore Govermant job opportunities on the official OJAS Website:</p>
-<iframe style="margin-left: 25px;" src="https://ojas.gujarat.gov.in/Home.aspx" frameborder="2" height="250px" width="350px"></iframe>
-<footer><a href="new"><u>Back To Home</u></a>
-    <p>Contact us at=<a href="#">info@incredibleindia.com</a></p> 
-    <footer><p>&copy;2025 Incredible India Project.</p></footer>
+                <div class="col-12">
+                    <label class="form-label">Address</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <div class="col-md-4 needs-validation" novalidate>
+                    <label class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control"required>
+                    <div class="valid-feedback">
+                        done
+                      </div>
+                      <div class="invalid-feedback">
+                        Not valid Age!
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Preferred Interview Time</label>
+                    <input type="time" class="form-control">
+                </div>
+                <div class="col-md-3 needs-validation" novalidate>
+                    <label for="validationServer05" class="form-label">Mark</label>
+                    <input type="text" class="form-control" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                    <div class="valid-feedback">
+                        done
+                      </div>
+                      <div class="invalid-feedback">
+                        Not Valid Mark!
+                      </div>
+
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+
+        <h2>More Information</h2>
+        <p class="mb-3">Explore government job opportunities on the official OJAS Website:</p>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://ojas.gujarat.gov.in/Home.aspx" class="hover-effect"></iframe>
+        </div>
+    </div>
+
+    <footer class="custom-footer text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h4 mb-3">Indian Heritage</h3>
+                    <p>Celebrating India's rich cultural diversity and heritage through education and awareness.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h4 mb-3">Quick Links</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a></li>
+                        <li class="nav-item mb-2"><a href="culture.html" class="nav-link p-0 text-white-50">Culture</a></li>
+                        <li class="nav-item mb-2"><a href="landmark.html" class="nav-link p-0 text-white-50">Landmarks</a></li>
+                        <li class="nav-item mb-2"><a href="cuisine.html" class="nav-link p-0 text-white-50">Cuisine</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="h4 mb-3">Contact</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">info@indianheritage.com</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">+91 98765 43210</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">New Delhi, India</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Indian Heritage Site. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+          'use strict'
+        
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll('.needs-validation')
+        
+          // Loop over them and prevent submission
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+        
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()</script>
 </body>
 </html>
